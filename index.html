@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shyamu Avudurthi | Video Editor</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar glass-nav">
+    <div class="container navbar-container">
+      <div class="logo"><span class="logo-gradient">Shyamu Avudurthi</span></div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <video autoplay muted loop class="hero-video">
+      <source src="assets/videos/placeholder.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-photo-wrap">
+        <img src="assets/images/your-photo.jpg" alt="Shyamu Avudurthi" class="hero-photo">
+      </div>
+      <h1 class="hero-title">Professional <span class="highlight">Video Editor</span></h1>
+      <p class="hero-subtitle">Reels, YouTube, Ads | Creative & Engaging Content</p>
+      <div class="hero-buttons">
+        <a href="portfolio.html" class="btn gradient-btn"><i class="fa-solid fa-play"></i> View Portfolio</a>
+        <a href="contact.html" class="btn btn-secondary"><i class="fa-solid fa-envelope"></i> Contact Me</a>
+      </div>
+    </div>
+    <div class="scroll-down">
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about glass-section fade-in-section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am a professional video editor specializing in <b>Premiere Pro</b>, <b>After Effects</b>, Reels, and YouTube videos. I create visually stunning content that captivates audiences.</p>
+      <div class="skills">
+        <div class="skill">
+          <span><i class="fa-brands fa-adobe"></i> Premiere Pro</span>
+          <div class="skill-bar"><div class="skill-progress" style="width:90%"></div></div>
+        </div>
+        <div class="skill">
+          <span><i class="fa-brands fa-adobe"></i> After Effects</span>
+          <div class="skill-bar"><div class="skill-progress" style="width:85%"></div></div>
+        </div>
+        <div class="skill">
+          <span><i class="fa-solid fa-film"></i> Reels Editing</span>
+          <div class="skill-bar"><div class="skill-progress" style="width:80%"></div></div>
+        </div>
+        <div class="skill">
+          <span><i class="fa-brands fa-youtube"></i> YouTube Videos</span>
+          <div class="skill-bar"><div class="skill-progress" style="width:75%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects -->
+  <section id="portfolio" class="featured-projects glass-section fade-in-section">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="assets/images/project1.jpg" alt="Project 1">
+            <div class="project-hover">
+              <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>YouTube Video #1</h3>
+            <p>Editing, Color Grading & Motion Graphics</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="assets/images/project2.jpg" alt="Project 2">
+            <div class="project-hover">
+              <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Instagram Reel #1</h3>
+            <p>Short Form Content optimized for Reels</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="assets/images/project3.jpg" alt="Project 3">
+            <div class="project-hover">
+              <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Ad Video #1</h3>
+            <p>Creative advertisement for social media campaigns</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="testimonials glass-section fade-in-section">
+    <div class="container">
+      <h2>What Clients Say</h2>
+      <div class="testimonial-carousel">
+        <div class="testimonial">
+          <p>"Amazing video editor! Highly recommend."</p>
+          <h4><i class="fa-solid fa-user"></i> John Doe</h4>
+        </div>
+        <div class="testimonial">
+          <p>"Professional, fast, and creative. Loved working together!"</p>
+          <h4><i class="fa-solid fa-user"></i> Jane Smith</h4>
+        </div>
+        <div class="testimonial">
+          <p>"Delivered exactly what we needed. Outstanding!"</p>
+          <h4><i class="fa-solid fa-user"></i> Mike Johnson</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2025 Shyamu Avudurthi. All Rights Reserved.</p>
+      <div class="social-links">
+        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
