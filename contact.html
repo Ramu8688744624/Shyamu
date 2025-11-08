@@ -40,15 +40,15 @@
       <div style="text-align:center; margin-bottom:1.5rem;">
         <img src="assets/images/your-photo.jpg" alt="Shyamu Avudurthi" style="width:110px;height:110px;object-fit:cover;border-radius:50%;box-shadow:0 4px 24px #1fa2ff44;">
       </div>
-      <form class="contact-form" style="display:flex;flex-direction:column;gap:1.2rem;">
-        <input type="text" placeholder="Your Name" required style="padding:0.9rem 1.2rem;border-radius:8px;border:none;background:#232946;color:#fff;">
-        <input type="email" placeholder="Your Email" required style="padding:0.9rem 1.2rem;border-radius:8px;border:none;background:#232946;color:#fff;">
-        <textarea placeholder="Your Message" rows="5" required style="padding:0.9rem 1.2rem;border-radius:8px;border:none;background:#232946;color:#fff;resize:vertical;"></textarea>
+      <form class="contact-form" onsubmit="sendWhatsApp(event)" style="display:flex;flex-direction:column;gap:1.2rem;">
+        <input type="text" id="name" placeholder="Your Name" required style="padding:0.9rem 1.2rem;border-radius:8px;border:none;background:#232946;color:#fff;">
+        <input type="email" id="email" placeholder="Your Email" required style="padding:0.9rem 1.2rem;border-radius:8px;border:none;background:#232946;color:#fff;">
+        <textarea id="message" placeholder="Your Message" rows="5" required style="padding:0.9rem 1.2rem;border-radius:8px;border:none;background:#232946;color:#fff;resize:vertical;"></textarea>
         <button type="submit" class="btn gradient-btn" style="width:100%;font-size:1.1rem;">Send Message <i class="fa-solid fa-paper-plane"></i></button>
       </form>
       <div style="text-align:center;margin-top:2rem;">
-        <a href="mailto:your@email.com" class="btn btn-secondary" style="margin:0 0.5rem;"><i class="fa-solid fa-envelope"></i> Email</a>
-        <a href="https://wa.me/yourwhatsapp" class="btn btn-secondary" style="margin:0 0.5rem;"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+        <a href="mailto:a.shyamu66@email.com" class="btn btn-secondary" style="margin:0 0.5rem;"><i class="fa-solid fa-envelope"></i> Email</a>
+        <a href="https://wa.me/918688742977" class="btn btn-secondary" style="margin:0 0.5rem;"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
       </div>
     </div>
   </section>
@@ -65,4 +65,18 @@
     </div>
   </footer>
 </body>
+<script>
+    function sendWhatsApp(e) {
+      e.preventDefault();
+      
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      
+      const whatsappMessage = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+      const whatsappUrl = `https://wa.me/918688742977?text=${whatsappMessage}`;
+      
+      window.open(whatsappUrl, '_blank');
+    }
+</script>
 </html>
